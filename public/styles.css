@@ -1,0 +1,168 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+  background-image: url("pexels-veeterzy-303383.jpg");
+  backdrop-filter: blur(8px);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+}
+h2{
+  display: block;
+  font-size: 1.5em;
+  color: #f2f2f2;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+
+#fileUploadContainer,
+#fileListContainer {
+  background-color:transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+  text-emphasis-color: black;
+  filter: blur();
+}
+
+ul {
+  list-style-type:none;
+  padding: 0;
+}
+
+
+li {
+  margin-bottom: 10px;
+  padding: 10px; /* Adjust the padding as needed */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 1s ease-in-out;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+#fileInput {
+  font-size: 100px; /* Adjust the font size as needed */
+  position: absolute;
+  left: 100px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+.file-description-input {
+  width: 50%;
+  padding: 11px;
+  margin: 1px 0;
+  border: none;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#fileInput {
+    font-size: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    
+    
+}
+
+.success {
+  color: #4CAF50;
+}
+
+.error {
+  color: #FF0000;
+}
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 500px; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 1px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: rgb(42, 147, 95); /* Add a hover color */
+}
+
+.active {
+  background-color:transparent /* Add an active/current color */
+}

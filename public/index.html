@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>File Storage</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a class="active" href="" ><i class="fa fa-home"></i></a>
+  <a href="#"><i class="fa fa-search"></i></a>
+  <a href="https://www.facebook.com/profile.php?id=100060033657219"><i class="fa fa-facebook"></i></a>
+  
+</div>
+    <div class="bg-image"></div>
+    <div id="fileUploadContainer">
+        <div class="upload-btn-wrapper">
+            <button class="btn">Upload a file</button>
+            <div class="description"> </div>
+            <input type="file" name="file" id="fileInput" class="file-input" />
+        </div>
+        <input type="text" id="fileDescription" class="file-description-input" placeholder="Enter file description" />
+        <button onclick="uploadFile()">Upload</button>
+    </div>
+    
+    </div>
+    <div id="uploadMessage"></div>
+    <div id="fileListContainer">
+        <h2>File List</h2>
+        <ul id="fileList"></ul>
+    </div>
+    <div id="fileList">
+        <!-- The file list will be dynamically populated here -->
+    </div>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
